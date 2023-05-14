@@ -126,4 +126,72 @@ Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
 $
 ```
 ### exercise2
+```bash
 
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git add home.html 
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git stash
+Saved working directory and index state WIP on dev: 610fdd0 Add README file
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git add about.html 
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git stash
+Saved working directory and index state WIP on dev: 610fdd0 Add README file
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git add team.html 
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git stash
+Saved working directory and index state WIP on dev: 610fdd0 Add README file
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git stash list
+stash@{0}: WIP on dev: 610fdd0 Add README file
+stash@{1}: WIP on dev: 610fdd0 Add README file
+stash@{2}: WIP on dev: 610fdd0 Add README file
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git stash pop stash@{1}
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+Dropped stash@{1} (43d04f148009eae656814fd4df1f9d6a6f6a25e6)
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git stash pop stash@{0}
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   team.html
+
+Dropped stash@{0} (b0511c546582764e1d2d77e0725718309dfc285f)
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git stash list
+stash@{0}: WIP on dev: 610fdd0 Add README file
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git log
+commit 610fdd0f80ddcce2c4b6e8264a3b26e30800dc22 (HEAD -> dev, origin/dev)
+Author: Nezerwa <eligrand2000@gmail.com>
+Date:   Sun May 14 17:55:47 2023 +0200
+
+    Add README file
+
+commit b83ad2a48a9f01bbd3c717c1af9e71ffc85c65eb
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git reset --hard 610fdd0f80ddcce2c4b6e8264a3b26e30800dc22
+HEAD is now at 610fdd0 Add README file
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$
+```
