@@ -235,3 +235,111 @@ To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/bundle-2)
 $
 ```
+## exercise2
+
+```bash
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ git checkout main 
+Switched to branch 'main'
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git add services.html 
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git commit -m 'Add new div'
+[ft/service-redesign 654401b] Add new div
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git push origi ft/service-redesign
+fatal: 'origi' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 328 bytes | 164.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/Nezerwa/Gym-Git-Exercise-Solutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git checkout main 
+Switched to branch 'main'
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git add services.html 
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git commit -m 'Add changes on service.html'
+[main def6765] Add changes on service.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 342 bytes | 342.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
+   3ad295f..def6765  main -> main
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git diff
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git diff main 
+diff --git a/services.html b/services.html
+index f18aca3..81be930 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+     <title>Document</title>
+ </head>
+ <body>
+-  <div>test merge conflict</div>
++    <div class="testing-div"></div>
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git merge main 
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git push -u origin ft/service-redesign
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 218 bytes | 109.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
+   654401b..ca44cd0  ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$
+```
