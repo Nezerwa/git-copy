@@ -14,7 +14,7 @@ Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (master)
 $ git branch -m master main
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (main)
-$ git add index.html 
+$ git add index.html
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (main)
 $ git commit -m 'Add html file'
@@ -23,7 +23,7 @@ $ git commit -m 'Add html file'
  create mode 100644 index.html
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (main)
-$ git add styles.css 
+$ git add styles.css
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (main)
 $ git commit -m 'Add css file'
@@ -57,7 +57,7 @@ $ git commit -m 'Rename css file'
  create mode 100644 style.css
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (main)
-$ git add index.html 
+$ git add index.html
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (main)
 $ git commit -m 'Make changes in html file to test git'
@@ -85,7 +85,7 @@ $ git checkout -b dev
 Switched to a new branch 'dev'
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
-$ git add index.html 
+$ git add index.html
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
 $ git commit -m 'Make changes on html file to push dev branch'
@@ -101,7 +101,7 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 368 bytes | 368.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-remote: 
+remote:
 remote: Create a pull request for 'dev' on GitHub by visiting:
 remote:      https://github.com/Nezerwa/Gym-Git-Exercise-Solutions/pull/new/dev
 remote:
@@ -125,25 +125,27 @@ Deleted branch test (was 5245071).
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
 $
 ```
+
 ### exercise2
+
 ```bash
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
-$ git add home.html 
+$ git add home.html
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
 $ git stash
 Saved working directory and index state WIP on dev: 610fdd0 Add README file
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
-$ git add about.html 
+$ git add about.html
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
 $ git stash
 Saved working directory and index state WIP on dev: 610fdd0 Add README file
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
-$ git add team.html 
+$ git add team.html
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
 $ git stash
@@ -193,5 +195,43 @@ $ git reset --hard 610fdd0f80ddcce2c4b6e8264a3b26e30800dc22
 HEAD is now at 610fdd0 Add README file
 
 Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$
+```
+
+## bundle2
+
+### exercise1
+
+```bash
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ git add services.html
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ git commit -m 'Add service.html'
+[ft/bundle-2 2acffc8] Add service.html
+ 1 file changed, 12 insertions(+)
+ create mode 100644 services.html
+
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ git push origin ft/bundle-2
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 240 bytes | 120.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Nezerwa/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/Nezerwa/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+Eligrand@Eligrand-Pc MINGW64 ~/Gym-Git-Exercise-Solutions (ft/bundle-2)
 $
 ```
